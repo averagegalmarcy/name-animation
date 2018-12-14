@@ -1,0 +1,28 @@
+body {
+  background: #333; 
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid grey;
+  white-space: nowrap;
+  marigin: 0 auto;
+  letter-spacing: .15em;
+  animation: 
+    typing 5s steps(30, end);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: blue }
+}
