@@ -26,3 +26,26 @@ body {
   from, to { border-color: transparent }
   50% { border-color: blue }
 }
+
+.typewriter {
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-top:95px;
+  margin-bottom:60px;
+  -webkit-animation-duration:                  10s;animation-duration: 10s;
+  -webkit-animation-fill-mode:                both;animation-fill-mode: both;
+}
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.typewriter {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
